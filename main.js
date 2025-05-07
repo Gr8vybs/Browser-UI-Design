@@ -189,8 +189,8 @@ resources = [
   
   const toggleImageSrc = () => {
     const imageTag = document.querySelector('.daylight');
-    const firstImage = '/images/icon-sun.png';
-    const secondImage = '/images/icon-moon.png';
+    const firstImage = 'icon-sun.png';
+    const secondImage = 'icon-moon.png';
     
     imageTag.src = imageTag.src.includes(firstImage) ? secondImage : firstImage;
   }
