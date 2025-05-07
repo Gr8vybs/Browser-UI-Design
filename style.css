@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: montserrat;
+  border-style: none;
+}
+body {
+  background-color: hsl(227, 75%, 14%);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.ext-container {
+  width: 100%;
+  margin: 20px auto;
+  background-color: hsl(225, 23%, 24%);
+  border-radius: 20px;
+  box-shadow: 0.2px 0.2px 3px white;
+  color: white;
+}
+.ext-logo {
+  width: 60px;
+  height: 60px;
+  margin: 20px 20px;
+}
+.top-sect {
+  display: flex;
+  margin-bottom: 20px;
+}
+.bottom-sect {
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+}
+.header-logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.daylight {
+ align-items: center;
+}
+.daylite {
+  display: flex;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  box-shadow: 0.2px 0.2px 3px white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.group-top {
+  display: flex;
+  flex-direction: column;
+}
+.title-bar {
+  display: flex;
+  width: 85%;
+  height: 35px;
+  padding: 10px;
+  align-items: center;
+  background-color: hsl(225, 23%, 24%);
+  margin: 20px auto;
+  border-radius: 9px;
+  box-shadow: 0.2px 0.2px 3px white;
+  color: white;
+}
+.sub-title {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* class for styling the interactive buttons; the allBtn, activeBtn and inactiveBtn */
+.interact {
+  display: flex;
+  width: 85%;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+/* styling all interactive buttons*/
+button {
+  font-family: montserrat;
+  font-size: 1.1rem;
+  padding: 14px 28px;
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: hsl(225, 23%, 24%);
+  box-shadow: 0.2px 0.2px 3px white;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* syling the hover state for all buttons*/
+button:hover {
+  background-color: hsl(3, 86%, 64%);
+  color: white;
+  box-shadow: none;
+  transform: scale(0.9);
+}
+.ext-name {
+  font-size: 1.6rem;
+  margin: 20px 15px 15px 0;
+  font-family: montserrat;
+}
+.ext-para {
+  font-size: 1.2rem;
+  margin-right: 25px;
+}
+.remove {
+  font-family: montserrat;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.toggle-wrapper {
+  display: flex;
+  width: 50px;
+  height: 25px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 13px;
+}
+.toggle-input {
+  display: none;
+}
+.toggle-label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.toggle-label::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  background: white;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: left 0.3s ease-in-out;
+}
+.toggle-input:checked + .toggle-label {
+  background-color: hsl(3, 86%, 64%);
+}
+.toggle-input:checked + .toggle-label::before {
+  left: 25px;
+}
+#light {
+  background-color: white;
+  color: hsl(225, 23%, 24%);
+  box-shadow: 0.2px 0.2px 6px hsl(225, 23%, 24%);
+}
+.entire {
+  background-color: white;
+  box-shadow: 0.2px 0.2px 6px hsl(225, 23%, 24%);
+  color: hsl(225, 23%, 24%);
+  font-weight: normal;
+}
+.title {
+  color: hsl(225, 23%, 24%);
+}
+.dot {
+  background-color: #EDF6FB;
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90vw;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+.ext-container {
+  justify-content: center;
+  align-items: center;
+  width: 389px;
+  margin: 20px 20px;
+  background-color: hsl(225, 23%, 24%);
+  border-radius: 20px;
+  box-shadow: 0.2px 0.2px 3px white;
+}
+}
